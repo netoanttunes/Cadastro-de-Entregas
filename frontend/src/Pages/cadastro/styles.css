@@ -26,7 +26,7 @@
 }
 
 .Cadastro-container section.form {
-  max-width: 600px;
+  max-width: 500px;
   
     
  
@@ -46,4 +46,11 @@
     margin-bottom: 10px;
     margin-top: 10px;
     text-align: center;
+}
+.Cadastro-container section.form .input-group{
+    display: flex;
+}
+.Cadastro-container section.form .input-group input +input {
+    margin-left: 8px;
+    max-width: 70px;
 }

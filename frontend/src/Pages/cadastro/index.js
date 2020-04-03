@@ -104,6 +104,8 @@ export default function Cadastro() {
                     value={bairro_partida}
                     onChange={ e => setBairro_partida(e.target.value)} 
                 />
+
+                <div className="input-group">
                 <input 
                     placeholder="Cidade"
                     value={cidade_partida}
@@ -114,7 +116,7 @@ export default function Cadastro() {
                     value={uf_partida}
                     onChange={ e => setUf_partida(e.target.value)} 
                 />
-
+                </div>
                 <h2>Endereço de destino</h2>
 
                 <input 
@@ -137,6 +139,7 @@ export default function Cadastro() {
                     value={bairro_destino}
                     onChange={ e => setBairro_destino(e.target.value)} 
                 />
+                <div className="input-group">
                 <input 
                     placeholder="Cidade"
                     value={cidade_destino}
@@ -147,7 +150,7 @@ export default function Cadastro() {
                     value={uf_destino}
                     onChange={ e => setUf_destino(e.target.value)} 
                 />
-                
+                </div>
                 <button className="button" type="submit">Cadastrar</button>
 
                 </form>
