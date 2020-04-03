@@ -90,7 +90,7 @@ export default function Cadastro() {
                     onChange={ e => setRua_partida(e.target.value)} 
                 />
                 <input 
-                    placeholder="Número"
+                    placeholder="Número (Somente números)"
                     value={numero_partida}
                     onChange={ e => setNumero_partida(e.target.value)} 
                 />

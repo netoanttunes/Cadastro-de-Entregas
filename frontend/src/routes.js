@@ -3,8 +3,6 @@ import React from 'react';
 
 import cadastro from './Pages/cadastro';
 import lista from './Pages/lista';
-import mapa from './Pages/mapa';
-
 
 export default function Routes() {
     return(
@@ -12,9 +10,6 @@ export default function Routes() {
             <Switch>
                 <Route path="/" exact component={cadastro} />
                 <Route path="/lista" component={lista} />
-                <Route path="/mapa" component={mapa} />
-                 
-
             </Switch>
         </BrowserRouter>
     )

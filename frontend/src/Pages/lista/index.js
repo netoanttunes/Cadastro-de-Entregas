@@ -1,15 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom'
-import { FiMapPin } from 'react-icons/fi'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FiMapPin } from 'react-icons/fi';
 
 import './styles.css';
 import logoImg from '../../assets/logo.svg';
 
-
 export default function Lista(){
     const [entregas, setEntregas] = useState([]);
-
-  
 
     useEffect(() => {
         async function fetchData() {
@@ -21,21 +18,17 @@ export default function Lista(){
           }
         fetchData();
       }, []);
-
-        
-
-    
     
     return (
         <div className="lista-container">
             <header>
-                <img src={logoImg} alt="Be the Hero" />
+                <img src={logoImg} alt="UNICAD" />
               
                 <Link className="button" to="/">Nova entrega</Link>
               
             </header>
             <h1>Entregas Cadastradas</h1>
-
+                        
             <ul>
                 {entregas.map( entregas => {
                     return(
