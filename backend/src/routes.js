@@ -1,11 +1,11 @@
 const { Router } = require('express');
-const EntrecasController = require ('./Controllers/EntregasController')
+const EntregasController = require ('./Controllers/EntregasController')
 
 const routes = Router();
 
-routes.get('/entregas', EntrecasController.index); 
+routes.get('/entregas', EntregasController.index); 
 
-routes.post('/entregas', EntrecasController.store);
+routes.post('/entregas', EntregasController.store);
 
 
 

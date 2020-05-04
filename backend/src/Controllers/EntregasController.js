@@ -1,5 +1,6 @@
 const Entrega = require("../models/Entrega")
 
+
 module.exports ={
 
     async index(request, response) {
